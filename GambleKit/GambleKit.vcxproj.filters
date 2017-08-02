@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{3f4469b0-7c4f-4209-8d86-c635a412f491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Utils">
+      <UniqueIdentifier>{abe5ace2-6fa2-49f8-a75c-7bdd1cb2d702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\OSSpecific">
+      <UniqueIdentifier>{29a2bff4-0ad9-4ebd-9ab0-421c1bc47fd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Graphics">
+      <UniqueIdentifier>{69d9be45-fad1-4dcc-8ae6-be36db0824c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game">
+      <UniqueIdentifier>{4a352382-1872-44d4-b20b-6c87fc2a960e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game\ReelModels">
+      <UniqueIdentifier>{c231860d-988c-4cc2-a671-2ec8edac93d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game\Entities">
+      <UniqueIdentifier>{afe7aa3e-baf9-4e45-a55c-e4ca52abcc94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game\Entities\Bindings">
+      <UniqueIdentifier>{e661e87d-850a-490c-a3d2-24a5be94b765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Game\Entities\Buttons">
+      <UniqueIdentifier>{82d32f9e-c1f2-4642-8d53-c23c76e52fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Base">
+      <UniqueIdentifier>{39edfe35-394e-49b3-a13c-efebc50f322e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Sound">
+      <UniqueIdentifier>{490b83e7-4287-4fc8-a4e4-6095eb0b8fc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustomGameLogic">
+      <UniqueIdentifier>{9f15391c-49db-4601-8f29-c24eb9bf0ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustomGameLogic\Pages">
+      <UniqueIdentifier>{f42eacd7-d7ed-4ef6-9543-605970a76838}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CustomGameLogic\Pages\MainPage.cpp">
+      <Filter>CustomGameLogic\Pages</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomGameLogic\main.cpp">
+      <Filter>CustomGameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomGameLogic\CustomGame.cpp">
+      <Filter>CustomGameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomGameLogic\MainWindow.cpp">
+      <Filter>CustomGameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Utils\GkStrings.cpp">
+      <Filter>Engine\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Utils\GkMaths.cpp">
+      <Filter>Engine\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound\GkSoundSource.cpp">
+      <Filter>Engine\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Sound\GkSoundDevice.cpp">
+      <Filter>Engine\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\OSSpecific\GkWindowsThread.cpp">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\OSSpecific\GkWindowsMutex.cpp">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\OSSpecific\GkFileSystem.cpp">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\OSSpecific\GkOSUtils.cpp">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\GkImage.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\OSSpecific\GkWindowsForm.cpp">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\OSSpecific\GkOpenGLWindowsForm.cpp">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\GkTexture.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\GkGraphicsDevice.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\GkAnimatedTexture.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\GkAnimatedFont.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\GkGameWinningsModel.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\GkGameWinningsAnalyzer.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\GkGameWinningPotentialsAnalyzer.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\GkGameTimer.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\GkGameReelsCombinationGenerator.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\GkGameReelModel.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\GkGamePage.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\GkGameEntity.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\ReelModels\GkGameReelStripModel.cpp">
+      <Filter>Engine\Game\ReelModels</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\ReelModels\GkGameReelRandomModel.cpp">
+      <Filter>Engine\Game\ReelModels</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\GkGameWinningCounter.cpp">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\GkGameText.cpp">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\GkGameStreamingAnimation.cpp">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\GkGameReels.cpp">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\GkGameButton.cpp">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\GkGameAnimation.cpp">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\Buttons\GkGameClickButton.cpp">
+      <Filter>Engine\Game\Entities\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\Buttons\GkGameCheckButton.cpp">
+      <Filter>Engine\Game\Entities\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\Buttons\GkGameAnimationButton.cpp">
+      <Filter>Engine\Game\Entities\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameTextsIntBinding.cpp">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameTextsFormatIntBinding.cpp">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameTextsFormatBinding.cpp">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameTextsDateTimeBinding.cpp">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameButtonsSoundBinding.cpp">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameButtonsBinding.cpp">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameAnimationsSoundBinding.cpp">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Base\GkBaseReelMap.cpp">
+      <Filter>Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Base\GkBase.cpp">
+      <Filter>Engine\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Game\GkGame.cpp">
+      <Filter>Engine\Game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CustomGameLogic\Pages\MainPage.h">
+      <Filter>CustomGameLogic\Pages</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomGameLogic\MainWindow.h">
+      <Filter>CustomGameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomGameLogic\CustomGame.h">
+      <Filter>CustomGameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Utils\GkStrings.h">
+      <Filter>Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Utils\GkMaths.h">
+      <Filter>Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Utils\GkLogFile.h">
+      <Filter>Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Utils\GkList.h">
+      <Filter>Engine\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\GkSoundSource.h">
+      <Filter>Engine\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Sound\GkSoundDevice.h">
+      <Filter>Engine\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\OSSpecific\GkWindowsThread.h">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\OSSpecific\GkWindowsMutex.h">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\OSSpecific\GkFileSystem.h">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\OSSpecific\GkOSUtils.h">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\OSSpecific\GkWindowsForm.h">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\OSSpecific\GkOpenGLWindowsForm.h">
+      <Filter>Engine\OSSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\GkImage.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\GkTexture.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\GkGraphicsDevice.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\GkAnimatedTexture.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\GkAnimatedFont.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\GkGameWinningsModel.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\GkGameWinningsAnalyzer.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\GkGameWinningPotentialsAnalyzer.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\GkGameTimer.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\GkGameReelsCombinationGenerator.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\GkGameReelModel.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\GkGamePage.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\GkGameEntity.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\GkGame.h">
+      <Filter>Engine\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\ReelModels\GkGameReelStripModel.h">
+      <Filter>Engine\Game\ReelModels</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\ReelModels\GkGameReelRandomModel.h">
+      <Filter>Engine\Game\ReelModels</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\GkGameWinningCounter.h">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\GkGameText.h">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\GkGameStreamingAnimation.h">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\GkGameReels.h">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\GkGameButton.h">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\GkGameAnimation.h">
+      <Filter>Engine\Game\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\Buttons\GkGameClickButton.h">
+      <Filter>Engine\Game\Entities\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\Buttons\GkGameCheckButton.h">
+      <Filter>Engine\Game\Entities\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\Buttons\GkGameAnimationButton.h">
+      <Filter>Engine\Game\Entities\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameTextsIntBinding.h">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameTextsFormatIntBinding.h">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameTextsFormatBinding.h">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameTextsDateTimeBinding.h">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameButtonsSoundBinding.h">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameButtonsBinding.h">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameAnimationsSoundBinding.h">
+      <Filter>Engine\Game\Entities\Bindings</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Base\GkBaseReelMap.h">
+      <Filter>Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Base\GkBase.h">
+      <Filter>Engine\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GambleKit.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GkDefinitions.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="Intruduction.txt" />
+    <None Include="..\License.txt" />
+    <None Include="version.txt" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

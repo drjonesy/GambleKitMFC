@@ -1,0 +1,12 @@
+v 0.891
+Added a "Gk" prefix to all GambleKit class names. Still considering using namespece instead.
+Added methods for creating a file containing a virtual file system. Changed the VirtualFileSystem class to GkFileSystem. Added functionality to dynamically change the file system mode to physical or virtual and to respectively set a root dir or a virtual file system file.
+Removed the first parameter from the four Acquire methods of Game (now GkGame)
+Made preparations for making the project as a library. 
+
+For the next version:
+Make GambleKit as a dll. After that, It will still be available to use directly from the source.
+New examples
+Settings manager
+
+v 0.89 - First release

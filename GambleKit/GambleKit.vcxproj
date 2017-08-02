@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E6093060-EA31-4FF3-9230-2E9CDF34C694}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GambleKit</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(SolutionDir)lib\DevIL;$(SolutionDir)lib\AL;$(SolutionDir)lib\GL;$(SolutionDir)lib\vld\Win32;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)\include\AL;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)include;$(SolutionDir)\include\AL;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)lib\DevIL;$(SolutionDir)lib\AL;$(SolutionDir)lib\GL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glut32.lib;DevIL.lib;ILU.lib;ILUT.lib;OpenAL32.lib;alut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glut32.lib;DevIL.lib;ILU.lib;ILUT.lib;OpenAL32.lib;alut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\Base\GkBase.cpp" />
+    <ClCompile Include="Engine\Base\GkBaseReelMap.cpp" />
+    <ClCompile Include="CustomGameLogic\CustomGame.cpp" />
+    <ClCompile Include="CustomGameLogic\Pages\MainPage.cpp" />
+    <ClCompile Include="CustomGameLogic\MainWindow.cpp" />
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameAnimationsSoundBinding.cpp" />
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameButtonsBinding.cpp" />
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameButtonsSoundBinding.cpp" />
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameTextsDateTimeBinding.cpp" />
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameTextsFormatBinding.cpp" />
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameTextsFormatIntBinding.cpp" />
+    <ClCompile Include="Engine\Game\Entities\Bindings\GkGameTextsIntBinding.cpp" />
+    <ClCompile Include="Engine\Game\Entities\Buttons\GkGameAnimationButton.cpp" />
+    <ClCompile Include="Engine\Game\Entities\Buttons\GkGameCheckButton.cpp" />
+    <ClCompile Include="Engine\Game\Entities\Buttons\GkGameClickButton.cpp" />
+    <ClCompile Include="Engine\Game\Entities\GkGameAnimation.cpp" />
+    <ClCompile Include="Engine\Game\Entities\GkGameButton.cpp" />
+    <ClCompile Include="Engine\Game\Entities\GkGameReels.cpp" />
+    <ClCompile Include="Engine\Game\Entities\GkGameStreamingAnimation.cpp" />
+    <ClCompile Include="Engine\Game\Entities\GkGameText.cpp" />
+    <ClCompile Include="Engine\Game\GkGame.cpp" />
+    <ClCompile Include="Engine\Game\GkGameEntity.cpp" />
+    <ClCompile Include="Engine\Game\GkGamePage.cpp" />
+    <ClCompile Include="Engine\Game\GkGameReelModel.cpp" />
+    <ClCompile Include="Engine\Game\GkGameReelsCombinationGenerator.cpp" />
+    <ClCompile Include="Engine\Game\GkGameTimer.cpp" />
+    <ClCompile Include="Engine\Game\Entities\GkGameWinningCounter.cpp" />
+    <ClCompile Include="Engine\Game\GkGameWinningPotentialsAnalyzer.cpp" />
+    <ClCompile Include="Engine\Game\GkGameWinningsAnalyzer.cpp" />
+    <ClCompile Include="Engine\Game\GkGameWinningsModel.cpp" />
+    <ClCompile Include="Engine\Game\ReelModels\GkGameReelRandomModel.cpp" />
+    <ClCompile Include="Engine\Game\ReelModels\GkGameReelStripModel.cpp" />
+    <ClCompile Include="Engine\Graphics\GkAnimatedFont.cpp" />
+    <ClCompile Include="Engine\Graphics\GkAnimatedTexture.cpp" />
+    <ClCompile Include="Engine\Graphics\GkGraphicsDevice.cpp" />
+    <ClCompile Include="Engine\Graphics\GkImage.cpp" />
+    <ClCompile Include="Engine\Graphics\GkTexture.cpp" />
+    <ClCompile Include="CustomGameLogic\main.cpp" />
+    <ClCompile Include="Engine\OSSpecific\GkOpenGLWindowsForm.cpp" />
+    <ClCompile Include="Engine\OSSpecific\GkOSUtils.cpp" />
+    <ClCompile Include="Engine\OSSpecific\GkFileSystem.cpp" />
+    <ClCompile Include="Engine\OSSpecific\GkWindowsForm.cpp" />
+    <ClCompile Include="Engine\OSSpecific\GkWindowsMutex.cpp" />
+    <ClCompile Include="Engine\OSSpecific\GkWindowsThread.cpp" />
+    <ClCompile Include="Engine\Sound\GkSoundDevice.cpp" />
+    <ClCompile Include="Engine\Sound\GkSoundSource.cpp" />
+    <ClCompile Include="Engine\Utils\GkMaths.cpp" />
+    <ClCompile Include="Engine\Utils\GkStrings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Base\GkBase.h" />
+    <ClInclude Include="Engine\Base\GkBaseReelMap.h" />
+    <ClInclude Include="CustomGameLogic\CustomGame.h" />
+    <ClInclude Include="CustomGameLogic\Pages\MainPage.h" />
+    <ClInclude Include="CustomGameLogic\MainWindow.h" />
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameAnimationsSoundBinding.h" />
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameButtonsBinding.h" />
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameButtonsSoundBinding.h" />
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameTextsDateTimeBinding.h" />
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameTextsFormatBinding.h" />
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameTextsFormatIntBinding.h" />
+    <ClInclude Include="Engine\Game\Entities\Bindings\GkGameTextsIntBinding.h" />
+    <ClInclude Include="Engine\Game\Entities\Buttons\GkGameAnimationButton.h" />
+    <ClInclude Include="Engine\Game\Entities\Buttons\GkGameCheckButton.h" />
+    <ClInclude Include="Engine\Game\Entities\Buttons\GkGameClickButton.h" />
+    <ClInclude Include="Engine\Game\Entities\GkGameAnimation.h" />
+    <ClInclude Include="Engine\Game\Entities\GkGameButton.h" />
+    <ClInclude Include="Engine\Game\Entities\GkGameReels.h" />
+    <ClInclude Include="Engine\Game\Entities\GkGameStreamingAnimation.h" />
+    <ClInclude Include="Engine\Game\Entities\GkGameText.h" />
+    <ClInclude Include="Engine\Game\GkGame.h" />
+    <ClInclude Include="Engine\Game\GkGameEntity.h" />
+    <ClInclude Include="Engine\Game\GkGamePage.h" />
+    <ClInclude Include="Engine\Game\GkGameReelModel.h" />
+    <ClInclude Include="Engine\Game\GkGameReelsCombinationGenerator.h" />
+    <ClInclude Include="Engine\Game\GkGameTimer.h" />
+    <ClInclude Include="Engine\Game\Entities\GkGameWinningCounter.h" />
+    <ClInclude Include="Engine\Game\GkGameWinningPotentialsAnalyzer.h" />
+    <ClInclude Include="Engine\Game\GkGameWinningsAnalyzer.h" />
+    <ClInclude Include="Engine\Game\GkGameWinningsModel.h" />
+    <ClInclude Include="Engine\Game\ReelModels\GkGameReelRandomModel.h" />
+    <ClInclude Include="Engine\Game\ReelModels\GkGameReelStripModel.h" />
+    <ClInclude Include="Engine\GkDefinitions.h" />
+    <ClInclude Include="Engine\Graphics\GkAnimatedFont.h" />
+    <ClInclude Include="Engine\Graphics\GkAnimatedTexture.h" />
+    <ClInclude Include="Engine\Graphics\GkGraphicsDevice.h" />
+    <ClInclude Include="Engine\Graphics\GkImage.h" />
+    <ClInclude Include="Engine\Graphics\GkTexture.h" />
+    <ClInclude Include="Engine\OSSpecific\GkOpenGLWindowsForm.h" />
+    <ClInclude Include="Engine\OSSpecific\GkOSUtils.h" />
+    <ClInclude Include="Engine\OSSpecific\GkFileSystem.h" />
+    <ClInclude Include="Engine\OSSpecific\GkWindowsForm.h" />
+    <ClInclude Include="Engine\OSSpecific\GkWindowsMutex.h" />
+    <ClInclude Include="Engine\OSSpecific\GkWindowsThread.h" />
+    <ClInclude Include="Engine\Sound\GkSoundDevice.h" />
+    <ClInclude Include="Engine\Sound\GkSoundSource.h" />
+    <ClInclude Include="Engine\Utils\GkList.h" />
+    <ClInclude Include="Engine\Utils\GkLogFile.h" />
+    <ClInclude Include="Engine\Utils\GkMaths.h" />
+    <ClInclude Include="Engine\Utils\GkStrings.h" />
+    <ClInclude Include="Engine\GambleKit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\License.txt" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="Intruduction.txt" />
+    <None Include="ReadMe.txt" />
+    <None Include="version.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

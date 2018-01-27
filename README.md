@@ -12,3 +12,4 @@ The only files I edited are
 
 Thanks to Scott Mayer for getting the DLL files working
 
+<img src="mfc-screenshot.png" />
